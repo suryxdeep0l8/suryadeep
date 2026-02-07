@@ -1,0 +1,41 @@
+<html>
+<head>
+    <title>compos email</title>
+</head>
+<body align="center">
+
+    <h1>mail form</h1>
+
+    <form align="center" method="post" action="send_email.php">
+        <table border="1" align="center": cellpadding="10" cellspacing="0">
+
+            <tr align="center">
+                <td>
+                     <label for="to">To:</label><br>
+                     <input type="email" id="to" name="to" required><br><br>
+
+                     <label for="from">From:</label><br>
+                     <input type="email" id="from" name="from" required><br><br>
+   
+
+                     <label for="subject">Subject:</label><br>
+                     <input type="text" id="subject" name="subject" required><br><br>
+     
+                     <label for="body">compos email:</label><br>
+                     <textarea id="body" name="body" rows="4" cols="50"></textarea><br><br>
+                     
+                     <label for="attachment"></label><br> 
+                     <input type="file" id="attachment" name="attachment"><br><br>
+
+                     <input type="submit" value="Send">
+
+                     <input type="reset" value="Reset all"> 
+
+                </td>
+            </tr>
+
+        </table>
+  
+    </form>
+</body>
+</html> 
