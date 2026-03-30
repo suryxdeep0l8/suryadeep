@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .menu {
+            display: flex;
+            gap: 20px;
+        }
+
+        .menu-item {
+            padding: 10px 20px;
+            background: #f0f0f0;
+            cursor: pointer;
+            transition: background 0.3s ease, color 0.3s ease;
+        }
+
+        .menu-item:hover {
+            background: #007BFF;
+            color: white;
+        }
+
+        .menu-item.active {
+            background: #007BFF;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <div class="menu-item" onclick="setActive(this)">Home</div>
+        <div class="menu-item" onclick="setActive(this)">About</div>
+        <div class="menu-item" onclick="setActive(this)">Services</div>
+        <div class="menu-item" onclick="setActive(this)">Contact</div>
+    </div>
+</body>
+</html>
